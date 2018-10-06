@@ -1,0 +1,4 @@
+data/*
+*.log
+*.tmp
+.ipynb_checkpoints/*

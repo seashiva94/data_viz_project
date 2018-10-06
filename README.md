@@ -2,9 +2,6 @@
 
 The repository contains the visualizations for the Data Visualization course.
 
-Currently, we are planning to use one of the following datasets.
-- suicides in india
-- Comittee for Protection of Journalists dataset
-- mexico air pollution data
-- Million Song Dataset
-- crime dataset
+The project dives into the CPJ journalist death dataset and aims to create
+visualizations that help inunderstanding the problem and possibly provide
+useful insights.
