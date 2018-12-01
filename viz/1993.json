@@ -1,0 +1,1777 @@
+{
+  "config": {"view": {"width": 400, "height": 300}},
+  "data": {
+    "url": "https://vega.github.io/vega-datasets/data/world-110m.json",
+    "format": {"feature": "countries", "type": "topojson"}
+  },
+  "mark": "geoshape",
+  "encoding": {
+    "color": {"type": "quantitative", "field": "NumberDeaths"},
+    "tooltip": [
+      {"type": "nominal", "field": "Country"},
+      {"type": "quantitative", "field": "NumberDeaths"},
+      {"type": "quantitative", "field": "year"}
+    ]
+  },
+  "height": 500,
+  "projection": {"type": "equirectangular"},
+  "transform": [
+    {
+      "lookup": "id",
+      "from": {
+        "data": {"name": "data-db991cac56a3eb987ebc3ded5533ef2a"},
+        "key": "Country_code",
+        "fields": ["Country_code", "year", "Country", "NumberDeaths"]
+      }
+    }
+  ],
+  "width": 800,
+  "$schema": "https://vega.github.io/schema/vega-lite/v2.6.0.json",
+  "datasets": {
+    "data-db991cac56a3eb987ebc3ded5533ef2a": [
+      {
+        "Country_code": 4,
+        "year": 1993,
+        "Country": "Afghanistan",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 8,
+        "year": 1993,
+        "Country": "Albania",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 10,
+        "year": 1993,
+        "Country": "Antarctica",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 12,
+        "year": 1993,
+        "Country": "Algeria",
+        "Alpha_3_codes": "DZA",
+        "NumberDeaths": 8
+      },
+      {
+        "Country_code": 16,
+        "year": 1993,
+        "Country": "American Samoa",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 20,
+        "year": 1993,
+        "Country": "Andorra",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 24,
+        "year": 1993,
+        "Country": "Angola",
+        "Alpha_3_codes": "AGO",
+        "NumberDeaths": 3
+      },
+      {
+        "Country_code": 28,
+        "year": 1993,
+        "Country": "Antigua and Barbuda",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 31,
+        "year": 1993,
+        "Country": "Azerbaijan",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 32,
+        "year": 1993,
+        "Country": "Argentina",
+        "Alpha_3_codes": "ARG",
+        "NumberDeaths": 1
+      },
+      {
+        "Country_code": 36,
+        "year": 1993,
+        "Country": "Australia",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 40,
+        "year": 1993,
+        "Country": "Austria",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 44,
+        "year": 1993,
+        "Country": "Bahamas",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 48,
+        "year": 1993,
+        "Country": "Bahrain",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 50,
+        "year": 1993,
+        "Country": "Bangladesh",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 51,
+        "year": 1993,
+        "Country": "Armenia",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 52,
+        "year": 1993,
+        "Country": "Barbados",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 56,
+        "year": 1993,
+        "Country": "Belgium",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 60,
+        "year": 1993,
+        "Country": "Bermuda",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 64,
+        "year": 1993,
+        "Country": "Bhutan",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 68,
+        "year": 1993,
+        "Country": "Bolivia (Plurinational State of)",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 70,
+        "year": 1993,
+        "Country": "Bosnia and Herzegovina",
+        "Alpha_3_codes": "BIH",
+        "NumberDeaths": 9
+      },
+      {
+        "Country_code": 72,
+        "year": 1993,
+        "Country": "Botswana",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 74,
+        "year": 1993,
+        "Country": "Bouvet Island",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 76,
+        "year": 1993,
+        "Country": "Brazil",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 84,
+        "year": 1993,
+        "Country": "Belize",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 86,
+        "year": 1993,
+        "Country": "British Indian Ocean Territory",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 90,
+        "year": 1993,
+        "Country": "Solomon Islands",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 92,
+        "year": 1993,
+        "Country": "Virgin Islands (British)",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 96,
+        "year": 1993,
+        "Country": "Brunei Darussalam",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 100,
+        "year": 1993,
+        "Country": "Bulgaria",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 104,
+        "year": 1993,
+        "Country": "Myanmar",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 108,
+        "year": 1993,
+        "Country": "Burundi",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 112,
+        "year": 1993,
+        "Country": "Belarus",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 116,
+        "year": 1993,
+        "Country": "Cambodia",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 120,
+        "year": 1993,
+        "Country": "Cameroon",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 124,
+        "year": 1993,
+        "Country": "Canada",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 132,
+        "year": 1993,
+        "Country": "Cabo Verde",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 136,
+        "year": 1993,
+        "Country": "Cayman Islands",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 140,
+        "year": 1993,
+        "Country": "Central African Republic",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 144,
+        "year": 1993,
+        "Country": "Sri Lanka",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 148,
+        "year": 1993,
+        "Country": "Chad",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 152,
+        "year": 1993,
+        "Country": "Chile",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 156,
+        "year": 1993,
+        "Country": "China",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 158,
+        "year": 1993,
+        "Country": "Taiwan, Province of China",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 162,
+        "year": 1993,
+        "Country": "Christmas Island",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 166,
+        "year": 1993,
+        "Country": "Cocos (Keeling) Islands",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 170,
+        "year": 1993,
+        "Country": "Colombia",
+        "Alpha_3_codes": "COL",
+        "NumberDeaths": 4
+      },
+      {
+        "Country_code": 174,
+        "year": 1993,
+        "Country": "Comoros",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 175,
+        "year": 1993,
+        "Country": "Mayotte",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 178,
+        "year": 1993,
+        "Country": "Congo",
+        "Alpha_3_codes": "COG",
+        "NumberDeaths": 1
+      },
+      {
+        "Country_code": 180,
+        "year": 1993,
+        "Country": "Congo, Democratic Republic of the",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 184,
+        "year": 1993,
+        "Country": "Cook Islands",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 188,
+        "year": 1993,
+        "Country": "Costa Rica",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 191,
+        "year": 1993,
+        "Country": "Croatia",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 192,
+        "year": 1993,
+        "Country": "Cuba",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 196,
+        "year": 1993,
+        "Country": "Cyprus",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 203,
+        "year": 1993,
+        "Country": "Czechia",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 204,
+        "year": 1993,
+        "Country": "Benin",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 208,
+        "year": 1993,
+        "Country": "Denmark",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 212,
+        "year": 1993,
+        "Country": "Dominica",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 214,
+        "year": 1993,
+        "Country": "Dominican Republic",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 218,
+        "year": 1993,
+        "Country": "Ecuador",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 222,
+        "year": 1993,
+        "Country": "El Salvador",
+        "Alpha_3_codes": "SLV",
+        "NumberDeaths": 1
+      },
+      {
+        "Country_code": 226,
+        "year": 1993,
+        "Country": "Equatorial Guinea",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 231,
+        "year": 1993,
+        "Country": "Ethiopia",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 232,
+        "year": 1993,
+        "Country": "Eritrea",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 233,
+        "year": 1993,
+        "Country": "Estonia",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 234,
+        "year": 1993,
+        "Country": "Faroe Islands",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 238,
+        "year": 1993,
+        "Country": "Falkland Islands (Malvinas)",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 239,
+        "year": 1993,
+        "Country": "South Georgia and the South Sandwich Islands",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 242,
+        "year": 1993,
+        "Country": "Fiji",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 246,
+        "year": 1993,
+        "Country": "Finland",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 248,
+        "year": 1993,
+        "Country": "Åland Islands",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 250,
+        "year": 1993,
+        "Country": "France",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 254,
+        "year": 1993,
+        "Country": "French Guiana",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 258,
+        "year": 1993,
+        "Country": "French Polynesia",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 260,
+        "year": 1993,
+        "Country": "French Southern Territories",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 262,
+        "year": 1993,
+        "Country": "Djibouti",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 266,
+        "year": 1993,
+        "Country": "Gabon",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 268,
+        "year": 1993,
+        "Country": "Georgia",
+        "Alpha_3_codes": "GEO",
+        "NumberDeaths": 3
+      },
+      {
+        "Country_code": 270,
+        "year": 1993,
+        "Country": "Gambia",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 275,
+        "year": 1993,
+        "Country": "Palestine, State of",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 276,
+        "year": 1993,
+        "Country": "Germany",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 288,
+        "year": 1993,
+        "Country": "Ghana",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 292,
+        "year": 1993,
+        "Country": "Gibraltar",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 296,
+        "year": 1993,
+        "Country": "Kiribati",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 300,
+        "year": 1993,
+        "Country": "Greece",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 304,
+        "year": 1993,
+        "Country": "Greenland",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 308,
+        "year": 1993,
+        "Country": "Grenada",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 312,
+        "year": 1993,
+        "Country": "Guadeloupe",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 316,
+        "year": 1993,
+        "Country": "Guam",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 320,
+        "year": 1993,
+        "Country": "Guatemala",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 324,
+        "year": 1993,
+        "Country": "Guinea",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 328,
+        "year": 1993,
+        "Country": "Guyana",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 332,
+        "year": 1993,
+        "Country": "Haiti",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 334,
+        "year": 1993,
+        "Country": "Heard Island and McDonald Islands",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 336,
+        "year": 1993,
+        "Country": "Holy See",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 340,
+        "year": 1993,
+        "Country": "Honduras",
+        "Alpha_3_codes": "HND",
+        "NumberDeaths": 1
+      },
+      {
+        "Country_code": 344,
+        "year": 1993,
+        "Country": "Hong Kong",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 348,
+        "year": 1993,
+        "Country": "Hungary",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 352,
+        "year": 1993,
+        "Country": "Iceland",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 356,
+        "year": 1993,
+        "Country": "India",
+        "Alpha_3_codes": "IND",
+        "NumberDeaths": 2
+      },
+      {
+        "Country_code": 360,
+        "year": 1993,
+        "Country": "Indonesia",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 364,
+        "year": 1993,
+        "Country": "Iran (Islamic Republic of)",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 368,
+        "year": 1993,
+        "Country": "Iraq",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 372,
+        "year": 1993,
+        "Country": "Ireland",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 376,
+        "year": 1993,
+        "Country": "Israel",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 380,
+        "year": 1993,
+        "Country": "Italy",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 384,
+        "year": 1993,
+        "Country": "Côte d'Ivoire",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 388,
+        "year": 1993,
+        "Country": "Jamaica",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 392,
+        "year": 1993,
+        "Country": "Japan",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 398,
+        "year": 1993,
+        "Country": "Kazakhstan",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 400,
+        "year": 1993,
+        "Country": "Jordan",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 404,
+        "year": 1993,
+        "Country": "Kenya",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 408,
+        "year": 1993,
+        "Country": "Korea (Democratic People's Republic of)",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 410,
+        "year": 1993,
+        "Country": "Korea, Republic of",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 414,
+        "year": 1993,
+        "Country": "Kuwait",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 417,
+        "year": 1993,
+        "Country": "Kyrgyzstan",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 418,
+        "year": 1993,
+        "Country": "Lao People's Democratic Republic",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 422,
+        "year": 1993,
+        "Country": "Lebanon",
+        "Alpha_3_codes": "LBN",
+        "NumberDeaths": 1
+      },
+      {
+        "Country_code": 426,
+        "year": 1993,
+        "Country": "Lesotho",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 428,
+        "year": 1993,
+        "Country": "Latvia",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 430,
+        "year": 1993,
+        "Country": "Liberia",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 434,
+        "year": 1993,
+        "Country": "Libya",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 438,
+        "year": 1993,
+        "Country": "Liechtenstein",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 440,
+        "year": 1993,
+        "Country": "Lithuania",
+        "Alpha_3_codes": "LTU",
+        "NumberDeaths": 1
+      },
+      {
+        "Country_code": 442,
+        "year": 1993,
+        "Country": "Luxembourg",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 446,
+        "year": 1993,
+        "Country": "Macao",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 450,
+        "year": 1993,
+        "Country": "Madagascar",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 454,
+        "year": 1993,
+        "Country": "Malawi",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 458,
+        "year": 1993,
+        "Country": "Malaysia",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 462,
+        "year": 1993,
+        "Country": "Maldives",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 466,
+        "year": 1993,
+        "Country": "Mali",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 470,
+        "year": 1993,
+        "Country": "Malta",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 474,
+        "year": 1993,
+        "Country": "Martinique",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 478,
+        "year": 1993,
+        "Country": "Mauritania",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 480,
+        "year": 1993,
+        "Country": "Mauritius",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 484,
+        "year": 1993,
+        "Country": "Mexico",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 492,
+        "year": 1993,
+        "Country": "Monaco",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 496,
+        "year": 1993,
+        "Country": "Mongolia",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 498,
+        "year": 1993,
+        "Country": "Moldova, Republic of",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 499,
+        "year": 1993,
+        "Country": "Montenegro",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 500,
+        "year": 1993,
+        "Country": "Montserrat",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 504,
+        "year": 1993,
+        "Country": "Morocco",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 508,
+        "year": 1993,
+        "Country": "Mozambique",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 512,
+        "year": 1993,
+        "Country": "Oman",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 516,
+        "year": 1993,
+        "Country": "Namibia",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 520,
+        "year": 1993,
+        "Country": "Nauru",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 524,
+        "year": 1993,
+        "Country": "Nepal",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 528,
+        "year": 1993,
+        "Country": "Netherlands",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 531,
+        "year": 1993,
+        "Country": "Curaçao",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 533,
+        "year": 1993,
+        "Country": "Aruba",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 534,
+        "year": 1993,
+        "Country": "Sint Maarten (Dutch part)",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 535,
+        "year": 1993,
+        "Country": "Bonaire, Sint Eustatius and Saba",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 540,
+        "year": 1993,
+        "Country": "New Caledonia",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 548,
+        "year": 1993,
+        "Country": "Vanuatu",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 554,
+        "year": 1993,
+        "Country": "New Zealand",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 558,
+        "year": 1993,
+        "Country": "Nicaragua",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 562,
+        "year": 1993,
+        "Country": "Niger",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 566,
+        "year": 1993,
+        "Country": "Nigeria",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 570,
+        "year": 1993,
+        "Country": "Niue",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 574,
+        "year": 1993,
+        "Country": "Norfolk Island",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 578,
+        "year": 1993,
+        "Country": "Norway",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 580,
+        "year": 1993,
+        "Country": "Northern Mariana Islands",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 581,
+        "year": 1993,
+        "Country": "United States Minor Outlying Islands",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 583,
+        "year": 1993,
+        "Country": "Micronesia (Federated States of)",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 584,
+        "year": 1993,
+        "Country": "Marshall Islands",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 585,
+        "year": 1993,
+        "Country": "Palau",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 586,
+        "year": 1993,
+        "Country": "Pakistan",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 591,
+        "year": 1993,
+        "Country": "Panama",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 598,
+        "year": 1993,
+        "Country": "Papua New Guinea",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 600,
+        "year": 1993,
+        "Country": "Paraguay",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 604,
+        "year": 1993,
+        "Country": "Peru",
+        "Alpha_3_codes": "PER",
+        "NumberDeaths": 1
+      },
+      {
+        "Country_code": 608,
+        "year": 1993,
+        "Country": "Philippines",
+        "Alpha_3_codes": "PHL",
+        "NumberDeaths": 3
+      },
+      {
+        "Country_code": 612,
+        "year": 1993,
+        "Country": "Pitcairn",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 616,
+        "year": 1993,
+        "Country": "Poland",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 620,
+        "year": 1993,
+        "Country": "Portugal",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 624,
+        "year": 1993,
+        "Country": "Guinea-Bissau",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 626,
+        "year": 1993,
+        "Country": "Timor-Leste",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 630,
+        "year": 1993,
+        "Country": "Puerto Rico",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 634,
+        "year": 1993,
+        "Country": "Qatar",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 638,
+        "year": 1993,
+        "Country": "Réunion",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 642,
+        "year": 1993,
+        "Country": "Romania",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 643,
+        "year": 1993,
+        "Country": "Russian Federation",
+        "Alpha_3_codes": "RUS",
+        "NumberDeaths": 8
+      },
+      {
+        "Country_code": 646,
+        "year": 1993,
+        "Country": "Rwanda",
+        "Alpha_3_codes": "RWA",
+        "NumberDeaths": 1
+      },
+      {
+        "Country_code": 652,
+        "year": 1993,
+        "Country": "Saint Barthélemy",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 654,
+        "year": 1993,
+        "Country": "Saint Helena, Ascension and Tristan da Cunha",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 659,
+        "year": 1993,
+        "Country": "Saint Kitts and Nevis",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 660,
+        "year": 1993,
+        "Country": "Anguilla",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 662,
+        "year": 1993,
+        "Country": "Saint Lucia",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 663,
+        "year": 1993,
+        "Country": "Saint Martin (French part)",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 666,
+        "year": 1993,
+        "Country": "Saint Pierre and Miquelon",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 670,
+        "year": 1993,
+        "Country": "Saint Vincent and the Grenadines",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 674,
+        "year": 1993,
+        "Country": "San Marino",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 678,
+        "year": 1993,
+        "Country": "Sao Tome and Principe",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 682,
+        "year": 1993,
+        "Country": "Saudi Arabia",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 686,
+        "year": 1993,
+        "Country": "Senegal",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 688,
+        "year": 1993,
+        "Country": "Serbia",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 690,
+        "year": 1993,
+        "Country": "Seychelles",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 694,
+        "year": 1993,
+        "Country": "Sierra Leone",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 702,
+        "year": 1993,
+        "Country": "Singapore",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 703,
+        "year": 1993,
+        "Country": "Slovakia",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 704,
+        "year": 1993,
+        "Country": "Viet Nam",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 705,
+        "year": 1993,
+        "Country": "Slovenia",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 706,
+        "year": 1993,
+        "Country": "Somalia",
+        "Alpha_3_codes": "SOM",
+        "NumberDeaths": 5
+      },
+      {
+        "Country_code": 710,
+        "year": 1993,
+        "Country": "South Africa",
+        "Alpha_3_codes": "ZAF",
+        "NumberDeaths": 1
+      },
+      {
+        "Country_code": 716,
+        "year": 1993,
+        "Country": "Zimbabwe",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 724,
+        "year": 1993,
+        "Country": "Spain",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 728,
+        "year": 1993,
+        "Country": "South Sudan",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 729,
+        "year": 1993,
+        "Country": "Sudan",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 732,
+        "year": 1993,
+        "Country": "Western Sahara",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 740,
+        "year": 1993,
+        "Country": "Suriname",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 744,
+        "year": 1993,
+        "Country": "Svalbard and Jan Mayen",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 748,
+        "year": 1993,
+        "Country": "Eswatini",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 752,
+        "year": 1993,
+        "Country": "Sweden",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 756,
+        "year": 1993,
+        "Country": "Switzerland",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 760,
+        "year": 1993,
+        "Country": "Syrian Arab Republic",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 762,
+        "year": 1993,
+        "Country": "Tajikistan",
+        "Alpha_3_codes": "TJK",
+        "NumberDeaths": 12
+      },
+      {
+        "Country_code": 764,
+        "year": 1993,
+        "Country": "Thailand",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 768,
+        "year": 1993,
+        "Country": "Togo",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 772,
+        "year": 1993,
+        "Country": "Tokelau",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 776,
+        "year": 1993,
+        "Country": "Tonga",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 780,
+        "year": 1993,
+        "Country": "Trinidad and Tobago",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 784,
+        "year": 1993,
+        "Country": "United Arab Emirates",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 788,
+        "year": 1993,
+        "Country": "Tunisia",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 792,
+        "year": 1993,
+        "Country": "Turkey",
+        "Alpha_3_codes": "TUR",
+        "NumberDeaths": 4
+      },
+      {
+        "Country_code": 795,
+        "year": 1993,
+        "Country": "Turkmenistan",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 796,
+        "year": 1993,
+        "Country": "Turks and Caicos Islands",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 798,
+        "year": 1993,
+        "Country": "Tuvalu",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 800,
+        "year": 1993,
+        "Country": "Uganda",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 804,
+        "year": 1993,
+        "Country": "Ukraine",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 807,
+        "year": 1993,
+        "Country": "Macedonia, the former Yugoslav Republic of",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 818,
+        "year": 1993,
+        "Country": "Egypt",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 826,
+        "year": 1993,
+        "Country": "United Kingdom of Great Britain and Northern Ireland",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 831,
+        "year": 1993,
+        "Country": "Guernsey",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 832,
+        "year": 1993,
+        "Country": "Jersey",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 833,
+        "year": 1993,
+        "Country": "Isle of Man",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 834,
+        "year": 1993,
+        "Country": "Tanzania, United Republic of",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 840,
+        "year": 1993,
+        "Country": "United States of America",
+        "Alpha_3_codes": "USA",
+        "NumberDeaths": 1
+      },
+      {
+        "Country_code": 850,
+        "year": 1993,
+        "Country": "Virgin Islands (U.S.)",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 854,
+        "year": 1993,
+        "Country": "Burkina Faso",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 858,
+        "year": 1993,
+        "Country": "Uruguay",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 860,
+        "year": 1993,
+        "Country": "Uzbekistan",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 862,
+        "year": 1993,
+        "Country": "Venezuela (Bolivarian Republic of)",
+        "Alpha_3_codes": "VEN",
+        "NumberDeaths": 1
+      },
+      {
+        "Country_code": 876,
+        "year": 1993,
+        "Country": "Wallis and Futuna",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 882,
+        "year": 1993,
+        "Country": "Samoa",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 887,
+        "year": 1993,
+        "Country": "Yemen",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 894,
+        "year": 1993,
+        "Country": "Zambia",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      }
+    ]
+  }
+}

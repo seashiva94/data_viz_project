@@ -1,0 +1,1777 @@
+{
+  "config": {"view": {"width": 400, "height": 300}},
+  "data": {
+    "url": "https://vega.github.io/vega-datasets/data/world-110m.json",
+    "format": {"feature": "countries", "type": "topojson"}
+  },
+  "mark": "geoshape",
+  "encoding": {
+    "color": {"type": "quantitative", "field": "NumberDeaths"},
+    "tooltip": [
+      {"type": "nominal", "field": "Country"},
+      {"type": "quantitative", "field": "NumberDeaths"},
+      {"type": "quantitative", "field": "year"}
+    ]
+  },
+  "height": 500,
+  "projection": {"type": "equirectangular"},
+  "transform": [
+    {
+      "lookup": "id",
+      "from": {
+        "data": {"name": "data-4a6b8f9619b4f150afec55a379364bdd"},
+        "key": "Country_code",
+        "fields": ["Country_code", "year", "Country", "NumberDeaths"]
+      }
+    }
+  ],
+  "width": 800,
+  "$schema": "https://vega.github.io/schema/vega-lite/v2.6.0.json",
+  "datasets": {
+    "data-4a6b8f9619b4f150afec55a379364bdd": [
+      {
+        "Country_code": 4,
+        "year": 2006,
+        "Country": "Afghanistan",
+        "Alpha_3_codes": "AFG",
+        "NumberDeaths": 3
+      },
+      {
+        "Country_code": 8,
+        "year": 2006,
+        "Country": "Albania",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 10,
+        "year": 2006,
+        "Country": "Antarctica",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 12,
+        "year": 2006,
+        "Country": "Algeria",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 16,
+        "year": 2006,
+        "Country": "American Samoa",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 20,
+        "year": 2006,
+        "Country": "Andorra",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 24,
+        "year": 2006,
+        "Country": "Angola",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 28,
+        "year": 2006,
+        "Country": "Antigua and Barbuda",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 31,
+        "year": 2006,
+        "Country": "Azerbaijan",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 32,
+        "year": 2006,
+        "Country": "Argentina",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 36,
+        "year": 2006,
+        "Country": "Australia",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 40,
+        "year": 2006,
+        "Country": "Austria",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 44,
+        "year": 2006,
+        "Country": "Bahamas",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 48,
+        "year": 2006,
+        "Country": "Bahrain",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 50,
+        "year": 2006,
+        "Country": "Bangladesh",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 51,
+        "year": 2006,
+        "Country": "Armenia",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 52,
+        "year": 2006,
+        "Country": "Barbados",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 56,
+        "year": 2006,
+        "Country": "Belgium",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 60,
+        "year": 2006,
+        "Country": "Bermuda",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 64,
+        "year": 2006,
+        "Country": "Bhutan",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 68,
+        "year": 2006,
+        "Country": "Bolivia (Plurinational State of)",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 70,
+        "year": 2006,
+        "Country": "Bosnia and Herzegovina",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 72,
+        "year": 2006,
+        "Country": "Botswana",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 74,
+        "year": 2006,
+        "Country": "Bouvet Island",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 76,
+        "year": 2006,
+        "Country": "Brazil",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 84,
+        "year": 2006,
+        "Country": "Belize",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 86,
+        "year": 2006,
+        "Country": "British Indian Ocean Territory",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 90,
+        "year": 2006,
+        "Country": "Solomon Islands",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 92,
+        "year": 2006,
+        "Country": "Virgin Islands (British)",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 96,
+        "year": 2006,
+        "Country": "Brunei Darussalam",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 100,
+        "year": 2006,
+        "Country": "Bulgaria",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 104,
+        "year": 2006,
+        "Country": "Myanmar",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 108,
+        "year": 2006,
+        "Country": "Burundi",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 112,
+        "year": 2006,
+        "Country": "Belarus",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 116,
+        "year": 2006,
+        "Country": "Cambodia",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 120,
+        "year": 2006,
+        "Country": "Cameroon",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 124,
+        "year": 2006,
+        "Country": "Canada",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 132,
+        "year": 2006,
+        "Country": "Cabo Verde",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 136,
+        "year": 2006,
+        "Country": "Cayman Islands",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 140,
+        "year": 2006,
+        "Country": "Central African Republic",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 144,
+        "year": 2006,
+        "Country": "Sri Lanka",
+        "Alpha_3_codes": "LKA",
+        "NumberDeaths": 3
+      },
+      {
+        "Country_code": 148,
+        "year": 2006,
+        "Country": "Chad",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 152,
+        "year": 2006,
+        "Country": "Chile",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 156,
+        "year": 2006,
+        "Country": "China",
+        "Alpha_3_codes": "CHN",
+        "NumberDeaths": 1
+      },
+      {
+        "Country_code": 158,
+        "year": 2006,
+        "Country": "Taiwan, Province of China",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 162,
+        "year": 2006,
+        "Country": "Christmas Island",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 166,
+        "year": 2006,
+        "Country": "Cocos (Keeling) Islands",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 170,
+        "year": 2006,
+        "Country": "Colombia",
+        "Alpha_3_codes": "COL",
+        "NumberDeaths": 3
+      },
+      {
+        "Country_code": 174,
+        "year": 2006,
+        "Country": "Comoros",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 175,
+        "year": 2006,
+        "Country": "Mayotte",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 178,
+        "year": 2006,
+        "Country": "Congo",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 180,
+        "year": 2006,
+        "Country": "Congo, Democratic Republic of the",
+        "Alpha_3_codes": "COD",
+        "NumberDeaths": 1
+      },
+      {
+        "Country_code": 184,
+        "year": 2006,
+        "Country": "Cook Islands",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 188,
+        "year": 2006,
+        "Country": "Costa Rica",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 191,
+        "year": 2006,
+        "Country": "Croatia",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 192,
+        "year": 2006,
+        "Country": "Cuba",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 196,
+        "year": 2006,
+        "Country": "Cyprus",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 203,
+        "year": 2006,
+        "Country": "Czechia",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 204,
+        "year": 2006,
+        "Country": "Benin",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 208,
+        "year": 2006,
+        "Country": "Denmark",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 212,
+        "year": 2006,
+        "Country": "Dominica",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 214,
+        "year": 2006,
+        "Country": "Dominican Republic",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 218,
+        "year": 2006,
+        "Country": "Ecuador",
+        "Alpha_3_codes": "ECU",
+        "NumberDeaths": 1
+      },
+      {
+        "Country_code": 222,
+        "year": 2006,
+        "Country": "El Salvador",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 226,
+        "year": 2006,
+        "Country": "Equatorial Guinea",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 231,
+        "year": 2006,
+        "Country": "Ethiopia",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 232,
+        "year": 2006,
+        "Country": "Eritrea",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 233,
+        "year": 2006,
+        "Country": "Estonia",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 234,
+        "year": 2006,
+        "Country": "Faroe Islands",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 238,
+        "year": 2006,
+        "Country": "Falkland Islands (Malvinas)",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 239,
+        "year": 2006,
+        "Country": "South Georgia and the South Sandwich Islands",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 242,
+        "year": 2006,
+        "Country": "Fiji",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 246,
+        "year": 2006,
+        "Country": "Finland",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 248,
+        "year": 2006,
+        "Country": "Åland Islands",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 250,
+        "year": 2006,
+        "Country": "France",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 254,
+        "year": 2006,
+        "Country": "French Guiana",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 258,
+        "year": 2006,
+        "Country": "French Polynesia",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 260,
+        "year": 2006,
+        "Country": "French Southern Territories",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 262,
+        "year": 2006,
+        "Country": "Djibouti",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 266,
+        "year": 2006,
+        "Country": "Gabon",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 268,
+        "year": 2006,
+        "Country": "Georgia",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 270,
+        "year": 2006,
+        "Country": "Gambia",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 275,
+        "year": 2006,
+        "Country": "Palestine, State of",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 276,
+        "year": 2006,
+        "Country": "Germany",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 288,
+        "year": 2006,
+        "Country": "Ghana",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 292,
+        "year": 2006,
+        "Country": "Gibraltar",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 296,
+        "year": 2006,
+        "Country": "Kiribati",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 300,
+        "year": 2006,
+        "Country": "Greece",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 304,
+        "year": 2006,
+        "Country": "Greenland",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 308,
+        "year": 2006,
+        "Country": "Grenada",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 312,
+        "year": 2006,
+        "Country": "Guadeloupe",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 316,
+        "year": 2006,
+        "Country": "Guam",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 320,
+        "year": 2006,
+        "Country": "Guatemala",
+        "Alpha_3_codes": "GTM",
+        "NumberDeaths": 1
+      },
+      {
+        "Country_code": 324,
+        "year": 2006,
+        "Country": "Guinea",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 328,
+        "year": 2006,
+        "Country": "Guyana",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 332,
+        "year": 2006,
+        "Country": "Haiti",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 334,
+        "year": 2006,
+        "Country": "Heard Island and McDonald Islands",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 336,
+        "year": 2006,
+        "Country": "Holy See",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 340,
+        "year": 2006,
+        "Country": "Honduras",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 344,
+        "year": 2006,
+        "Country": "Hong Kong",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 348,
+        "year": 2006,
+        "Country": "Hungary",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 352,
+        "year": 2006,
+        "Country": "Iceland",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 356,
+        "year": 2006,
+        "Country": "India",
+        "Alpha_3_codes": "IND",
+        "NumberDeaths": 2
+      },
+      {
+        "Country_code": 360,
+        "year": 2006,
+        "Country": "Indonesia",
+        "Alpha_3_codes": "IDN",
+        "NumberDeaths": 1
+      },
+      {
+        "Country_code": 364,
+        "year": 2006,
+        "Country": "Iran (Islamic Republic of)",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 368,
+        "year": 2006,
+        "Country": "Iraq",
+        "Alpha_3_codes": "IRQ",
+        "NumberDeaths": 55
+      },
+      {
+        "Country_code": 372,
+        "year": 2006,
+        "Country": "Ireland",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 376,
+        "year": 2006,
+        "Country": "Israel",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 380,
+        "year": 2006,
+        "Country": "Italy",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 384,
+        "year": 2006,
+        "Country": "Côte d'Ivoire",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 388,
+        "year": 2006,
+        "Country": "Jamaica",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 392,
+        "year": 2006,
+        "Country": "Japan",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 398,
+        "year": 2006,
+        "Country": "Kazakhstan",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 400,
+        "year": 2006,
+        "Country": "Jordan",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 404,
+        "year": 2006,
+        "Country": "Kenya",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 408,
+        "year": 2006,
+        "Country": "Korea (Democratic People's Republic of)",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 410,
+        "year": 2006,
+        "Country": "Korea, Republic of",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 414,
+        "year": 2006,
+        "Country": "Kuwait",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 417,
+        "year": 2006,
+        "Country": "Kyrgyzstan",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 418,
+        "year": 2006,
+        "Country": "Lao People's Democratic Republic",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 422,
+        "year": 2006,
+        "Country": "Lebanon",
+        "Alpha_3_codes": "LBN",
+        "NumberDeaths": 2
+      },
+      {
+        "Country_code": 426,
+        "year": 2006,
+        "Country": "Lesotho",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 428,
+        "year": 2006,
+        "Country": "Latvia",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 430,
+        "year": 2006,
+        "Country": "Liberia",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 434,
+        "year": 2006,
+        "Country": "Libya",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 438,
+        "year": 2006,
+        "Country": "Liechtenstein",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 440,
+        "year": 2006,
+        "Country": "Lithuania",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 442,
+        "year": 2006,
+        "Country": "Luxembourg",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 446,
+        "year": 2006,
+        "Country": "Macao",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 450,
+        "year": 2006,
+        "Country": "Madagascar",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 454,
+        "year": 2006,
+        "Country": "Malawi",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 458,
+        "year": 2006,
+        "Country": "Malaysia",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 462,
+        "year": 2006,
+        "Country": "Maldives",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 466,
+        "year": 2006,
+        "Country": "Mali",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 470,
+        "year": 2006,
+        "Country": "Malta",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 474,
+        "year": 2006,
+        "Country": "Martinique",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 478,
+        "year": 2006,
+        "Country": "Mauritania",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 480,
+        "year": 2006,
+        "Country": "Mauritius",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 484,
+        "year": 2006,
+        "Country": "Mexico",
+        "Alpha_3_codes": "MEX",
+        "NumberDeaths": 7
+      },
+      {
+        "Country_code": 492,
+        "year": 2006,
+        "Country": "Monaco",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 496,
+        "year": 2006,
+        "Country": "Mongolia",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 498,
+        "year": 2006,
+        "Country": "Moldova, Republic of",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 499,
+        "year": 2006,
+        "Country": "Montenegro",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 500,
+        "year": 2006,
+        "Country": "Montserrat",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 504,
+        "year": 2006,
+        "Country": "Morocco",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 508,
+        "year": 2006,
+        "Country": "Mozambique",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 512,
+        "year": 2006,
+        "Country": "Oman",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 516,
+        "year": 2006,
+        "Country": "Namibia",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 520,
+        "year": 2006,
+        "Country": "Nauru",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 524,
+        "year": 2006,
+        "Country": "Nepal",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 528,
+        "year": 2006,
+        "Country": "Netherlands",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 531,
+        "year": 2006,
+        "Country": "Curaçao",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 533,
+        "year": 2006,
+        "Country": "Aruba",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 534,
+        "year": 2006,
+        "Country": "Sint Maarten (Dutch part)",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 535,
+        "year": 2006,
+        "Country": "Bonaire, Sint Eustatius and Saba",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 540,
+        "year": 2006,
+        "Country": "New Caledonia",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 548,
+        "year": 2006,
+        "Country": "Vanuatu",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 554,
+        "year": 2006,
+        "Country": "New Zealand",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 558,
+        "year": 2006,
+        "Country": "Nicaragua",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 562,
+        "year": 2006,
+        "Country": "Niger",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 566,
+        "year": 2006,
+        "Country": "Nigeria",
+        "Alpha_3_codes": "NGA",
+        "NumberDeaths": 1
+      },
+      {
+        "Country_code": 570,
+        "year": 2006,
+        "Country": "Niue",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 574,
+        "year": 2006,
+        "Country": "Norfolk Island",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 578,
+        "year": 2006,
+        "Country": "Norway",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 580,
+        "year": 2006,
+        "Country": "Northern Mariana Islands",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 581,
+        "year": 2006,
+        "Country": "United States Minor Outlying Islands",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 583,
+        "year": 2006,
+        "Country": "Micronesia (Federated States of)",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 584,
+        "year": 2006,
+        "Country": "Marshall Islands",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 585,
+        "year": 2006,
+        "Country": "Palau",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 586,
+        "year": 2006,
+        "Country": "Pakistan",
+        "Alpha_3_codes": "PAK",
+        "NumberDeaths": 3
+      },
+      {
+        "Country_code": 591,
+        "year": 2006,
+        "Country": "Panama",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 598,
+        "year": 2006,
+        "Country": "Papua New Guinea",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 600,
+        "year": 2006,
+        "Country": "Paraguay",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 604,
+        "year": 2006,
+        "Country": "Peru",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 608,
+        "year": 2006,
+        "Country": "Philippines",
+        "Alpha_3_codes": "PHL",
+        "NumberDeaths": 8
+      },
+      {
+        "Country_code": 612,
+        "year": 2006,
+        "Country": "Pitcairn",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 616,
+        "year": 2006,
+        "Country": "Poland",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 620,
+        "year": 2006,
+        "Country": "Portugal",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 624,
+        "year": 2006,
+        "Country": "Guinea-Bissau",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 626,
+        "year": 2006,
+        "Country": "Timor-Leste",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 630,
+        "year": 2006,
+        "Country": "Puerto Rico",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 634,
+        "year": 2006,
+        "Country": "Qatar",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 638,
+        "year": 2006,
+        "Country": "Réunion",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 642,
+        "year": 2006,
+        "Country": "Romania",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 643,
+        "year": 2006,
+        "Country": "Russian Federation",
+        "Alpha_3_codes": "RUS",
+        "NumberDeaths": 5
+      },
+      {
+        "Country_code": 646,
+        "year": 2006,
+        "Country": "Rwanda",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 652,
+        "year": 2006,
+        "Country": "Saint Barthélemy",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 654,
+        "year": 2006,
+        "Country": "Saint Helena, Ascension and Tristan da Cunha",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 659,
+        "year": 2006,
+        "Country": "Saint Kitts and Nevis",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 660,
+        "year": 2006,
+        "Country": "Anguilla",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 662,
+        "year": 2006,
+        "Country": "Saint Lucia",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 663,
+        "year": 2006,
+        "Country": "Saint Martin (French part)",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 666,
+        "year": 2006,
+        "Country": "Saint Pierre and Miquelon",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 670,
+        "year": 2006,
+        "Country": "Saint Vincent and the Grenadines",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 674,
+        "year": 2006,
+        "Country": "San Marino",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 678,
+        "year": 2006,
+        "Country": "Sao Tome and Principe",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 682,
+        "year": 2006,
+        "Country": "Saudi Arabia",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 686,
+        "year": 2006,
+        "Country": "Senegal",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 688,
+        "year": 2006,
+        "Country": "Serbia",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 690,
+        "year": 2006,
+        "Country": "Seychelles",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 694,
+        "year": 2006,
+        "Country": "Sierra Leone",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 702,
+        "year": 2006,
+        "Country": "Singapore",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 703,
+        "year": 2006,
+        "Country": "Slovakia",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 704,
+        "year": 2006,
+        "Country": "Viet Nam",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 705,
+        "year": 2006,
+        "Country": "Slovenia",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 706,
+        "year": 2006,
+        "Country": "Somalia",
+        "Alpha_3_codes": "SOM",
+        "NumberDeaths": 1
+      },
+      {
+        "Country_code": 710,
+        "year": 2006,
+        "Country": "South Africa",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 716,
+        "year": 2006,
+        "Country": "Zimbabwe",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 724,
+        "year": 2006,
+        "Country": "Spain",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 728,
+        "year": 2006,
+        "Country": "South Sudan",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 729,
+        "year": 2006,
+        "Country": "Sudan",
+        "Alpha_3_codes": "SDN",
+        "NumberDeaths": 1
+      },
+      {
+        "Country_code": 732,
+        "year": 2006,
+        "Country": "Western Sahara",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 740,
+        "year": 2006,
+        "Country": "Suriname",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 744,
+        "year": 2006,
+        "Country": "Svalbard and Jan Mayen",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 748,
+        "year": 2006,
+        "Country": "Eswatini",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 752,
+        "year": 2006,
+        "Country": "Sweden",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 756,
+        "year": 2006,
+        "Country": "Switzerland",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 760,
+        "year": 2006,
+        "Country": "Syrian Arab Republic",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 762,
+        "year": 2006,
+        "Country": "Tajikistan",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 764,
+        "year": 2006,
+        "Country": "Thailand",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 768,
+        "year": 2006,
+        "Country": "Togo",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 772,
+        "year": 2006,
+        "Country": "Tokelau",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 776,
+        "year": 2006,
+        "Country": "Tonga",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 780,
+        "year": 2006,
+        "Country": "Trinidad and Tobago",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 784,
+        "year": 2006,
+        "Country": "United Arab Emirates",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 788,
+        "year": 2006,
+        "Country": "Tunisia",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 792,
+        "year": 2006,
+        "Country": "Turkey",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 795,
+        "year": 2006,
+        "Country": "Turkmenistan",
+        "Alpha_3_codes": "TKM",
+        "NumberDeaths": 1
+      },
+      {
+        "Country_code": 796,
+        "year": 2006,
+        "Country": "Turks and Caicos Islands",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 798,
+        "year": 2006,
+        "Country": "Tuvalu",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 800,
+        "year": 2006,
+        "Country": "Uganda",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 804,
+        "year": 2006,
+        "Country": "Ukraine",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 807,
+        "year": 2006,
+        "Country": "Macedonia, the former Yugoslav Republic of",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 818,
+        "year": 2006,
+        "Country": "Egypt",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 826,
+        "year": 2006,
+        "Country": "United Kingdom of Great Britain and Northern Ireland",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 831,
+        "year": 2006,
+        "Country": "Guernsey",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 832,
+        "year": 2006,
+        "Country": "Jersey",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 833,
+        "year": 2006,
+        "Country": "Isle of Man",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 834,
+        "year": 2006,
+        "Country": "Tanzania, United Republic of",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 840,
+        "year": 2006,
+        "Country": "United States of America",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 850,
+        "year": 2006,
+        "Country": "Virgin Islands (U.S.)",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 854,
+        "year": 2006,
+        "Country": "Burkina Faso",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 858,
+        "year": 2006,
+        "Country": "Uruguay",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 860,
+        "year": 2006,
+        "Country": "Uzbekistan",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 862,
+        "year": 2006,
+        "Country": "Venezuela (Bolivarian Republic of)",
+        "Alpha_3_codes": "VEN",
+        "NumberDeaths": 2
+      },
+      {
+        "Country_code": 876,
+        "year": 2006,
+        "Country": "Wallis and Futuna",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 882,
+        "year": 2006,
+        "Country": "Samoa",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 887,
+        "year": 2006,
+        "Country": "Yemen",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      },
+      {
+        "Country_code": 894,
+        "year": 2006,
+        "Country": "Zambia",
+        "Alpha_3_codes": 0,
+        "NumberDeaths": 0
+      }
+    ]
+  }
+}

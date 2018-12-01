@@ -1,0 +1,1527 @@
+{
+  "config": {"view": {"width": 400, "height": 300}},
+  "data": {
+    "url": "https://vega.github.io/vega-datasets/data/world-110m.json",
+    "format": {"feature": "countries", "type": "topojson"}
+  },
+  "mark": "geoshape",
+  "encoding": {
+    "color": {"type": "quantitative", "field": "NumberDeaths"},
+    "tooltip": [
+      {"type": "nominal", "field": "Country"},
+      {"type": "quantitative", "field": "NumberDeaths"}
+    ]
+  },
+  "height": 500,
+  "projection": {"type": "equirectangular"},
+  "transform": [
+    {
+      "lookup": "id",
+      "from": {
+        "data": {"name": "data-6b2f2d3f6ccd041b8a9d9b7b022bd45d"},
+        "key": "Country_code",
+        "fields": ["Country_code", "Country", "NumberDeaths"]
+      }
+    }
+  ],
+  "width": 800,
+  "$schema": "https://vega.github.io/schema/vega-lite/v2.6.0.json",
+  "datasets": {
+    "data-6b2f2d3f6ccd041b8a9d9b7b022bd45d": [
+      {
+        "Country": "Afghanistan",
+        "Country_code": 4,
+        "year": 50100,
+        "NumberDeaths": 36
+      },
+      {
+        "Country": "Albania",
+        "Country_code": 8,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Algeria",
+        "Country_code": 12,
+        "year": 50100,
+        "NumberDeaths": 61
+      },
+      {
+        "Country": "American Samoa",
+        "Country_code": 16,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Andorra",
+        "Country_code": 20,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Angola",
+        "Country_code": 24,
+        "year": 50100,
+        "NumberDeaths": 11
+      },
+      {
+        "Country": "Anguilla",
+        "Country_code": 660,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Antarctica",
+        "Country_code": 10,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Antigua and Barbuda",
+        "Country_code": 28,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Argentina",
+        "Country_code": 32,
+        "year": 50100,
+        "NumberDeaths": 4
+      },
+      {
+        "Country": "Armenia",
+        "Country_code": 51,
+        "year": 50100,
+        "NumberDeaths": 1
+      },
+      {
+        "Country": "Aruba",
+        "Country_code": 533,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Australia",
+        "Country_code": 36,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Austria",
+        "Country_code": 40,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Azerbaijan",
+        "Country_code": 31,
+        "year": 50100,
+        "NumberDeaths": 6
+      },
+      {
+        "Country": "Bahamas",
+        "Country_code": 44,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Bahrain",
+        "Country_code": 48,
+        "year": 50100,
+        "NumberDeaths": 3
+      },
+      {
+        "Country": "Bangladesh",
+        "Country_code": 50,
+        "year": 50100,
+        "NumberDeaths": 29
+      },
+      {
+        "Country": "Barbados",
+        "Country_code": 52,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Belarus",
+        "Country_code": 112,
+        "year": 50100,
+        "NumberDeaths": 6
+      },
+      {
+        "Country": "Belgium",
+        "Country_code": 56,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Belize",
+        "Country_code": 84,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Benin",
+        "Country_code": 204,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Bermuda",
+        "Country_code": 60,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Bhutan",
+        "Country_code": 64,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Bolivia (Plurinational State of)",
+        "Country_code": 68,
+        "year": 50100,
+        "NumberDeaths": 3
+      },
+      {
+        "Country": "Bonaire, Sint Eustatius and Saba",
+        "Country_code": 535,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Bosnia and Herzegovina",
+        "Country_code": 70,
+        "year": 50100,
+        "NumberDeaths": 25
+      },
+      {
+        "Country": "Botswana",
+        "Country_code": 72,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Bouvet Island",
+        "Country_code": 74,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Brazil",
+        "Country_code": 76,
+        "year": 50100,
+        "NumberDeaths": 49
+      },
+      {
+        "Country": "British Indian Ocean Territory",
+        "Country_code": 86,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Brunei Darussalam",
+        "Country_code": 96,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Bulgaria",
+        "Country_code": 100,
+        "year": 50100,
+        "NumberDeaths": 2
+      },
+      {
+        "Country": "Burkina Faso",
+        "Country_code": 854,
+        "year": 50100,
+        "NumberDeaths": 1
+      },
+      {
+        "Country": "Burundi",
+        "Country_code": 108,
+        "year": 50100,
+        "NumberDeaths": 4
+      },
+      {
+        "Country": "Cabo Verde",
+        "Country_code": 132,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Cambodia",
+        "Country_code": 116,
+        "year": 50100,
+        "NumberDeaths": 12
+      },
+      {
+        "Country": "Cameroon",
+        "Country_code": 120,
+        "year": 50100,
+        "NumberDeaths": 1
+      },
+      {
+        "Country": "Canada",
+        "Country_code": 124,
+        "year": 50100,
+        "NumberDeaths": 2
+      },
+      {
+        "Country": "Cayman Islands",
+        "Country_code": 136,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Central African Republic",
+        "Country_code": 140,
+        "year": 50100,
+        "NumberDeaths": 1
+      },
+      {
+        "Country": "Chad",
+        "Country_code": 148,
+        "year": 50100,
+        "NumberDeaths": 3
+      },
+      {
+        "Country": "Chile",
+        "Country_code": 152,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "China",
+        "Country_code": 156,
+        "year": 50100,
+        "NumberDeaths": 5
+      },
+      {
+        "Country": "Christmas Island",
+        "Country_code": 162,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Cocos (Keeling) Islands",
+        "Country_code": 166,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Colombia",
+        "Country_code": 170,
+        "year": 50100,
+        "NumberDeaths": 84
+      },
+      {
+        "Country": "Comoros",
+        "Country_code": 174,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Congo",
+        "Country_code": 178,
+        "year": 50100,
+        "NumberDeaths": 3
+      },
+      {
+        "Country": "Congo, Democratic Republic of the",
+        "Country_code": 180,
+        "year": 50100,
+        "NumberDeaths": 14
+      },
+      {
+        "Country": "Cook Islands",
+        "Country_code": 184,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Costa Rica",
+        "Country_code": 188,
+        "year": 50100,
+        "NumberDeaths": 1
+      },
+      {
+        "Country": "Croatia",
+        "Country_code": 191,
+        "year": 50100,
+        "NumberDeaths": 4
+      },
+      {
+        "Country": "Cuba",
+        "Country_code": 192,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Curaçao",
+        "Country_code": 531,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Cyprus",
+        "Country_code": 196,
+        "year": 50100,
+        "NumberDeaths": 1
+      },
+      {
+        "Country": "Czechia",
+        "Country_code": 203,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Côte d'Ivoire",
+        "Country_code": 384,
+        "year": 50100,
+        "NumberDeaths": 5
+      },
+      {
+        "Country": "Denmark",
+        "Country_code": 208,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Djibouti",
+        "Country_code": 262,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Dominica",
+        "Country_code": 212,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Dominican Republic",
+        "Country_code": 214,
+        "year": 50100,
+        "NumberDeaths": 4
+      },
+      {
+        "Country": "Ecuador",
+        "Country_code": 218,
+        "year": 50100,
+        "NumberDeaths": 3
+      },
+      {
+        "Country": "Egypt",
+        "Country_code": 818,
+        "year": 50100,
+        "NumberDeaths": 13
+      },
+      {
+        "Country": "El Salvador",
+        "Country_code": 222,
+        "year": 50100,
+        "NumberDeaths": 6
+      },
+      {
+        "Country": "Equatorial Guinea",
+        "Country_code": 226,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Eritrea",
+        "Country_code": 232,
+        "year": 50100,
+        "NumberDeaths": 2
+      },
+      {
+        "Country": "Estonia",
+        "Country_code": 233,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Eswatini",
+        "Country_code": 748,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Ethiopia",
+        "Country_code": 231,
+        "year": 50100,
+        "NumberDeaths": 2
+      },
+      {
+        "Country": "Falkland Islands (Malvinas)",
+        "Country_code": 238,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Faroe Islands",
+        "Country_code": 234,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Fiji",
+        "Country_code": 242,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Finland",
+        "Country_code": 246,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "France",
+        "Country_code": 250,
+        "year": 50100,
+        "NumberDeaths": 10
+      },
+      {
+        "Country": "French Guiana",
+        "Country_code": 254,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "French Polynesia",
+        "Country_code": 258,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "French Southern Territories",
+        "Country_code": 260,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Gabon",
+        "Country_code": 266,
+        "year": 50100,
+        "NumberDeaths": 1
+      },
+      {
+        "Country": "Gambia",
+        "Country_code": 270,
+        "year": 50100,
+        "NumberDeaths": 1
+      },
+      {
+        "Country": "Georgia",
+        "Country_code": 268,
+        "year": 50100,
+        "NumberDeaths": 9
+      },
+      {
+        "Country": "Germany",
+        "Country_code": 276,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Ghana",
+        "Country_code": 288,
+        "year": 50100,
+        "NumberDeaths": 1
+      },
+      {
+        "Country": "Gibraltar",
+        "Country_code": 292,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Greece",
+        "Country_code": 300,
+        "year": 50100,
+        "NumberDeaths": 1
+      },
+      {
+        "Country": "Greenland",
+        "Country_code": 304,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Grenada",
+        "Country_code": 308,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Guadeloupe",
+        "Country_code": 312,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Guam",
+        "Country_code": 316,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Guatemala",
+        "Country_code": 320,
+        "year": 50100,
+        "NumberDeaths": 23
+      },
+      {
+        "Country": "Guernsey",
+        "Country_code": 831,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Guinea",
+        "Country_code": 324,
+        "year": 50100,
+        "NumberDeaths": 4
+      },
+      {
+        "Country": "Guinea-Bissau",
+        "Country_code": 624,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Guyana",
+        "Country_code": 328,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Haiti",
+        "Country_code": 332,
+        "year": 50100,
+        "NumberDeaths": 9
+      },
+      {
+        "Country": "Heard Island and McDonald Islands",
+        "Country_code": 334,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Holy See",
+        "Country_code": 336,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Honduras",
+        "Country_code": 340,
+        "year": 50100,
+        "NumberDeaths": 23
+      },
+      {
+        "Country": "Hong Kong",
+        "Country_code": 344,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Hungary",
+        "Country_code": 348,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Iceland",
+        "Country_code": 352,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "India",
+        "Country_code": 356,
+        "year": 50100,
+        "NumberDeaths": 69
+      },
+      {
+        "Country": "Indonesia",
+        "Country_code": 360,
+        "year": 50100,
+        "NumberDeaths": 10
+      },
+      {
+        "Country": "Iran (Islamic Republic of)",
+        "Country_code": 364,
+        "year": 50100,
+        "NumberDeaths": 5
+      },
+      {
+        "Country": "Iraq",
+        "Country_code": 368,
+        "year": 50100,
+        "NumberDeaths": 263
+      },
+      {
+        "Country": "Ireland",
+        "Country_code": 372,
+        "year": 50100,
+        "NumberDeaths": 1
+      },
+      {
+        "Country": "Isle of Man",
+        "Country_code": 833,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Israel",
+        "Country_code": 376,
+        "year": 50100,
+        "NumberDeaths": 21
+      },
+      {
+        "Country": "Italy",
+        "Country_code": 380,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Jamaica",
+        "Country_code": 388,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Japan",
+        "Country_code": 392,
+        "year": 50100,
+        "NumberDeaths": 1
+      },
+      {
+        "Country": "Jersey",
+        "Country_code": 832,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Jordan",
+        "Country_code": 400,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Kazakhstan",
+        "Country_code": 398,
+        "year": 50100,
+        "NumberDeaths": 2
+      },
+      {
+        "Country": "Kenya",
+        "Country_code": 404,
+        "year": 50100,
+        "NumberDeaths": 5
+      },
+      {
+        "Country": "Kiribati",
+        "Country_code": 296,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Korea (Democratic People's Republic of)",
+        "Country_code": 408,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Korea, Republic of",
+        "Country_code": 410,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Kuwait",
+        "Country_code": 414,
+        "year": 50100,
+        "NumberDeaths": 1
+      },
+      {
+        "Country": "Kyrgyzstan",
+        "Country_code": 417,
+        "year": 50100,
+        "NumberDeaths": 2
+      },
+      {
+        "Country": "Lao People's Democratic Republic",
+        "Country_code": 418,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Latvia",
+        "Country_code": 428,
+        "year": 50100,
+        "NumberDeaths": 1
+      },
+      {
+        "Country": "Lebanon",
+        "Country_code": 422,
+        "year": 50100,
+        "NumberDeaths": 10
+      },
+      {
+        "Country": "Lesotho",
+        "Country_code": 426,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Liberia",
+        "Country_code": 430,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Libya",
+        "Country_code": 434,
+        "year": 50100,
+        "NumberDeaths": 13
+      },
+      {
+        "Country": "Liechtenstein",
+        "Country_code": 438,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Lithuania",
+        "Country_code": 440,
+        "year": 50100,
+        "NumberDeaths": 1
+      },
+      {
+        "Country": "Luxembourg",
+        "Country_code": 442,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Macao",
+        "Country_code": 446,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Macedonia, the former Yugoslav Republic of",
+        "Country_code": 807,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Madagascar",
+        "Country_code": 450,
+        "year": 50100,
+        "NumberDeaths": 2
+      },
+      {
+        "Country": "Malawi",
+        "Country_code": 454,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Malaysia",
+        "Country_code": 458,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Maldives",
+        "Country_code": 462,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Mali",
+        "Country_code": 466,
+        "year": 50100,
+        "NumberDeaths": 2
+      },
+      {
+        "Country": "Malta",
+        "Country_code": 470,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Marshall Islands",
+        "Country_code": 584,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Martinique",
+        "Country_code": 474,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Mauritania",
+        "Country_code": 478,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Mauritius",
+        "Country_code": 480,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Mayotte",
+        "Country_code": 175,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Mexico",
+        "Country_code": 484,
+        "year": 50100,
+        "NumberDeaths": 89
+      },
+      {
+        "Country": "Micronesia (Federated States of)",
+        "Country_code": 583,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Moldova, Republic of",
+        "Country_code": 498,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Monaco",
+        "Country_code": 492,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Mongolia",
+        "Country_code": 496,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Montenegro",
+        "Country_code": 499,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Montserrat",
+        "Country_code": 500,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Morocco",
+        "Country_code": 504,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Mozambique",
+        "Country_code": 508,
+        "year": 50100,
+        "NumberDeaths": 2
+      },
+      {
+        "Country": "Myanmar",
+        "Country_code": 104,
+        "year": 50100,
+        "NumberDeaths": 4
+      },
+      {
+        "Country": "Namibia",
+        "Country_code": 516,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Nauru",
+        "Country_code": 520,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Nepal",
+        "Country_code": 524,
+        "year": 50100,
+        "NumberDeaths": 16
+      },
+      {
+        "Country": "Netherlands",
+        "Country_code": 528,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "New Caledonia",
+        "Country_code": 540,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "New Zealand",
+        "Country_code": 554,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Nicaragua",
+        "Country_code": 558,
+        "year": 50100,
+        "NumberDeaths": 2
+      },
+      {
+        "Country": "Niger",
+        "Country_code": 562,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Nigeria",
+        "Country_code": 566,
+        "year": 50100,
+        "NumberDeaths": 19
+      },
+      {
+        "Country": "Niue",
+        "Country_code": 570,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Norfolk Island",
+        "Country_code": 574,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Northern Mariana Islands",
+        "Country_code": 580,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Norway",
+        "Country_code": 578,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Oman",
+        "Country_code": 512,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Pakistan",
+        "Country_code": 586,
+        "year": 50100,
+        "NumberDeaths": 86
+      },
+      {
+        "Country": "Palau",
+        "Country_code": 585,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Palestine, State of",
+        "Country_code": 275,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Panama",
+        "Country_code": 591,
+        "year": 50100,
+        "NumberDeaths": 1
+      },
+      {
+        "Country": "Papua New Guinea",
+        "Country_code": 598,
+        "year": 50100,
+        "NumberDeaths": 1
+      },
+      {
+        "Country": "Paraguay",
+        "Country_code": 600,
+        "year": 50100,
+        "NumberDeaths": 6
+      },
+      {
+        "Country": "Peru",
+        "Country_code": 604,
+        "year": 50100,
+        "NumberDeaths": 15
+      },
+      {
+        "Country": "Philippines",
+        "Country_code": 608,
+        "year": 50100,
+        "NumberDeaths": 133
+      },
+      {
+        "Country": "Pitcairn",
+        "Country_code": 612,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Poland",
+        "Country_code": 616,
+        "year": 50100,
+        "NumberDeaths": 1
+      },
+      {
+        "Country": "Portugal",
+        "Country_code": 620,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Puerto Rico",
+        "Country_code": 630,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Qatar",
+        "Country_code": 634,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Romania",
+        "Country_code": 642,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Russian Federation",
+        "Country_code": 643,
+        "year": 50100,
+        "NumberDeaths": 79
+      },
+      {
+        "Country": "Rwanda",
+        "Country_code": 646,
+        "year": 50100,
+        "NumberDeaths": 23
+      },
+      {
+        "Country": "Réunion",
+        "Country_code": 638,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Saint Barthélemy",
+        "Country_code": 652,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Saint Helena, Ascension and Tristan da Cunha",
+        "Country_code": 654,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Saint Kitts and Nevis",
+        "Country_code": 659,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Saint Lucia",
+        "Country_code": 662,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Saint Martin (French part)",
+        "Country_code": 663,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Saint Pierre and Miquelon",
+        "Country_code": 666,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Saint Vincent and the Grenadines",
+        "Country_code": 670,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Samoa",
+        "Country_code": 882,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "San Marino",
+        "Country_code": 674,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Sao Tome and Principe",
+        "Country_code": 678,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Saudi Arabia",
+        "Country_code": 682,
+        "year": 50100,
+        "NumberDeaths": 1
+      },
+      {
+        "Country": "Senegal",
+        "Country_code": 686,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Serbia",
+        "Country_code": 688,
+        "year": 50100,
+        "NumberDeaths": 3
+      },
+      {
+        "Country": "Seychelles",
+        "Country_code": 690,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Sierra Leone",
+        "Country_code": 694,
+        "year": 50100,
+        "NumberDeaths": 17
+      },
+      {
+        "Country": "Singapore",
+        "Country_code": 702,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Sint Maarten (Dutch part)",
+        "Country_code": 534,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Slovakia",
+        "Country_code": 703,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Slovenia",
+        "Country_code": 705,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Solomon Islands",
+        "Country_code": 90,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Somalia",
+        "Country_code": 706,
+        "year": 50100,
+        "NumberDeaths": 66
+      },
+      {
+        "Country": "South Africa",
+        "Country_code": 710,
+        "year": 50100,
+        "NumberDeaths": 4
+      },
+      {
+        "Country": "South Georgia and the South Sandwich Islands",
+        "Country_code": 239,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "South Sudan",
+        "Country_code": 728,
+        "year": 50100,
+        "NumberDeaths": 8
+      },
+      {
+        "Country": "Spain",
+        "Country_code": 724,
+        "year": 50100,
+        "NumberDeaths": 1
+      },
+      {
+        "Country": "Sri Lanka",
+        "Country_code": 144,
+        "year": 50100,
+        "NumberDeaths": 25
+      },
+      {
+        "Country": "Sudan",
+        "Country_code": 729,
+        "year": 50100,
+        "NumberDeaths": 2
+      },
+      {
+        "Country": "Suriname",
+        "Country_code": 740,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Svalbard and Jan Mayen",
+        "Country_code": 744,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Sweden",
+        "Country_code": 752,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Switzerland",
+        "Country_code": 756,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Syrian Arab Republic",
+        "Country_code": 760,
+        "year": 50100,
+        "NumberDeaths": 114
+      },
+      {
+        "Country": "Taiwan, Province of China",
+        "Country_code": 158,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Tajikistan",
+        "Country_code": 762,
+        "year": 50100,
+        "NumberDeaths": 29
+      },
+      {
+        "Country": "Tanzania, United Republic of",
+        "Country_code": 834,
+        "year": 50100,
+        "NumberDeaths": 2
+      },
+      {
+        "Country": "Thailand",
+        "Country_code": 764,
+        "year": 50100,
+        "NumberDeaths": 16
+      },
+      {
+        "Country": "Timor-Leste",
+        "Country_code": 626,
+        "year": 50100,
+        "NumberDeaths": 2
+      },
+      {
+        "Country": "Togo",
+        "Country_code": 768,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Tokelau",
+        "Country_code": 772,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Tonga",
+        "Country_code": 776,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Trinidad and Tobago",
+        "Country_code": 780,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Tunisia",
+        "Country_code": 788,
+        "year": 50100,
+        "NumberDeaths": 1
+      },
+      {
+        "Country": "Turkey",
+        "Country_code": 792,
+        "year": 50100,
+        "NumberDeaths": 29
+      },
+      {
+        "Country": "Turkmenistan",
+        "Country_code": 795,
+        "year": 50100,
+        "NumberDeaths": 1
+      },
+      {
+        "Country": "Turks and Caicos Islands",
+        "Country_code": 796,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Tuvalu",
+        "Country_code": 798,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Uganda",
+        "Country_code": 800,
+        "year": 50100,
+        "NumberDeaths": 5
+      },
+      {
+        "Country": "Ukraine",
+        "Country_code": 804,
+        "year": 50100,
+        "NumberDeaths": 19
+      },
+      {
+        "Country": "United Arab Emirates",
+        "Country_code": 784,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "United Kingdom of Great Britain and Northern Ireland",
+        "Country_code": 826,
+        "year": 50100,
+        "NumberDeaths": 3
+      },
+      {
+        "Country": "United States Minor Outlying Islands",
+        "Country_code": 581,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "United States of America",
+        "Country_code": 840,
+        "year": 50100,
+        "NumberDeaths": 9
+      },
+      {
+        "Country": "Uruguay",
+        "Country_code": 858,
+        "year": 50100,
+        "NumberDeaths": 1
+      },
+      {
+        "Country": "Uzbekistan",
+        "Country_code": 860,
+        "year": 50100,
+        "NumberDeaths": 1
+      },
+      {
+        "Country": "Vanuatu",
+        "Country_code": 548,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Venezuela (Bolivarian Republic of)",
+        "Country_code": 862,
+        "year": 50100,
+        "NumberDeaths": 9
+      },
+      {
+        "Country": "Viet Nam",
+        "Country_code": 704,
+        "year": 50100,
+        "NumberDeaths": 1
+      },
+      {
+        "Country": "Virgin Islands (British)",
+        "Country_code": 92,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Virgin Islands (U.S.)",
+        "Country_code": 850,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Wallis and Futuna",
+        "Country_code": 876,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Western Sahara",
+        "Country_code": 732,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Yemen",
+        "Country_code": 887,
+        "year": 50100,
+        "NumberDeaths": 19
+      },
+      {
+        "Country": "Zambia",
+        "Country_code": 894,
+        "year": 50100,
+        "NumberDeaths": 0
+      },
+      {
+        "Country": "Zimbabwe",
+        "Country_code": 716,
+        "year": 50100,
+        "NumberDeaths": 1
+      },
+      {
+        "Country": "Åland Islands",
+        "Country_code": 248,
+        "year": 50100,
+        "NumberDeaths": 0
+      }
+    ]
+  }
+}
