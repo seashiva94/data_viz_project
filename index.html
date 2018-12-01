@@ -2,16 +2,103 @@
 <html>
   <head>
     <title>Journalist Deaths Since 1992</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="css/index.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+       $(function() {
+            $( "#slider" ).slider({
+       value: 2000,
+       animate:"slow",
+       orientation: "horizontal",
+       range: true,
+       min: 1992,
+       max: 2016,
+       slide: function( event, ui ) {
+                  $( "#slider_year" ).val( ui.value );
+               }	
+       });
+       $( "#slider_year" ).val( $( "#slider" ).slider( "value" ) );
+       });
+       
+
+    </script>
+
+   
   </head>
   <body>
-    <h1>Journalist Deaths Since 1992</h1>
-    <p>
-      some text here.. project description
-    </p>
+    <div class="container-fluid" align="center">
+      <h1 >Journalist Deaths Since 1992</h1>
+      <div class="info">
+	<p>
+	  Journalism is one of the most important occupation in a free world. 
+Hard working journalists spend enormous amounts of their time and energy to dig into the situations and provide us with information that most people would miss otherwise. 
+Good journalism keeps the organizations in power in check and empower the citizens in a democracy with knowledge about the world.<br>
+The job however comes with its risks. Over the years journalists have had to face various perilous situations and many of them have been fatal.<br>
+	  In this project, we aim to visualize the information about the journalists who gave their life for the job and attempt to understand any reasons that gravity of the situation and aim find out which topics and geographical regions have proven to be more fatal than others.<br>
+<br>
+	  The dataset provided by the CPJ on <a href = "https://www.kaggle.com/cpjournalists/journalists-killed-worldwide-since-1992">Kaggle</a> contains information of journalist deaths from 1992 to March 2016 in 105 countries. Each event has information about the journalist's work and the murder.<br>
+CPJ includes in its definition of journalists the staff, freelancers, bloggers, stringers and journalists citizen who report news in the public domain regardless of the medium, which could be printed, photographic, radio, television or electronic.<br>
+	</p>
+      </div>
+      <h2 align="center">Visualization Results</h2>
+      <div class="info">
+	<p>
+	  #something here#
+	</p>
+      </div>
+      
+      <h3 align="center">Exploratory Analysis</h3>
+      <div class="info">
+      <p>
+	We start by exploring the dataset, and perform nasic exploratory data analysis on the dataset to get a better understanding of the data.
 
-    <h2>Visualization Results</h2>
-    <p>
-      Insert graphs here + other things
-    </p>
+	#insert eda graphs here#
+
+	As we can see from the graph on medium, there are different entries in the dataset that refer to the same entity.
+	We can also see that there are various rows that contain null values.<br><br>
+
+	Further, we can see from the time series graph the trend in the number of journalists killed across the world every year in the dataset.
+	We can clearly see some periods where there have been more deaths, and these can be explained by #something#
+      </p>
+      </div>
+
+
+      <h3 align="center">Data Maps</h3>
+      <div class="info">
+	<p>
+	</p>
+
+	<div id="slider" class="year_slider"></div>
+	<input type = "text" id = "slider_year" 
+            style = "border:0; color:#b9cd6d; font-weight:bold;">
+      </div>
+      
+      
+      
+      <h3 align="center">Network Graph</h3>
+      <div class="info">
+	<p>
+	</p>
+      </div>
+
+      <h3 align="center">Discussions</h3>
+      <div class="info">
+	<p>
+	</p>
+      </div>
+    </div>
   </body>
+
 </html>
