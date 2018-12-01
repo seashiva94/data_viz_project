@@ -16,6 +16,9 @@
     <link rel="stylesheet" href="https://resources/demos/style.css">
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@3.0.0-rc3"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@3"></script>
     <script>
        $(function() {
             $( "#slider" ).slider({
@@ -32,6 +35,11 @@
        $( "#slider_year" ).val( $( "#slider" ).slider( "value" ) );
        });
        
+       //spec = "Income.json";
+       var year = $( ".selector" ).slider( "option", "value" );
+       var spec = "viz/" + String(year) + ".json"
+       vegaEmbed('#vis', spec, {defaultStyle: true}).catch(console.warn);
+       
 
     </script>
 
@@ -39,7 +47,7 @@
   </head>
   <body>
     <div class="container-fluid" align="center">
-      <h1 >Journalist Deaths Since 1992</h1>
+      <h1>Journalist Deaths Since 1992</h1>
       <div class="info">
 	<p>
 	  Journalism is one of the most important occupation in a free world. 
@@ -82,7 +90,8 @@ CPJ includes in its definition of journalists the staff, freelancers, bloggers, 
 
 	<div id="slider" class="year_slider"></div>
 	<input type = "text" id = "slider_year" 
-            style = "border:0; color:#b9cd6d; font-weight:bold;">
+               style = "border:0; color:#b9cd6d; font-weight:bold;">
+	<div id="vis"></div>
       </div>
       
       
