@@ -6,7 +6,11 @@
   },
   "mark": "geoshape",
   "encoding": {
-    "color": {"type": "quantitative", "field": "NumberDeaths"},
+    "color": {
+      "type": "quantitative",
+      "field": "NumberDeaths",
+      "scale": {"domain": [0, 20]}
+    },
     "tooltip": [
       {"type": "nominal", "field": "Country"},
       {"type": "quantitative", "field": "NumberDeaths"},
