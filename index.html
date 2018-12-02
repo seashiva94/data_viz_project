@@ -57,9 +57,10 @@
        //spec = "Income.json";
        //var year = $( "#slider" ).slider( "value" );
        //console.log(year)
-       
-       
 
+       const spec_all = "viz/overall.json"
+       vegaEmbed('#vis_all', spec_all, {defaultStyle: true}).catch(console.warn);
+      
     </script>
 
    
@@ -105,10 +106,20 @@ CPJ includes in its definition of journalists the staff, freelancers, bloggers, 
       <h3 align="center">Data Maps</h3>
       <div class="year_slider">
 	<p>
+	  <div id="vis_all" ></div>
+	  <b>Journalists Deaths Since 1992</b> <br>
+	  <br>
+	</p>
+	<p class="info">
+	  The above map visualizes the number of deaths of journalists in each country 
+	  between the years 1992 and 2016.<br>
+	  The following visualizations provide a much detailed year-by year visualization for the same.
+	  These visualizations help us in comparing the worldwide socio-politcal scenario and changes
+	  in consequetive years.
 	</p>
 	
 	<p>
-	  Use the slider to select the year to visualize
+	  <em>Use the slider to select the year to visualize</em>
 	</p>
 	<div id="slider" ></div>
 	<div id = "year_info" ></div>
@@ -118,7 +129,11 @@ CPJ includes in its definition of journalists the staff, freelancers, bloggers, 
       <h3 align="center">Network Graph</h3>
       <div class="info">
 	<p>
+	  The following network graph shows the connections between the journalists and the coverage (the
+	  topics they were reporting on) at the time of death, for the entire dataset. We can see some
+	  interesting structure in the network graph.
 	</p>
+	<iframe src="viz/overallNetwork.html" class="network_iframe"></iframe>
       </div>
 
       <h3 align="center">Discussions</h3>
