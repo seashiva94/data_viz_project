@@ -16,7 +16,7 @@ h1{
 	  
 }
 
-.network_iframe{
+.eda, .network_iframe{
     width: 100%;
     height: 500px;
 }
