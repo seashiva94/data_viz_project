@@ -60,9 +60,29 @@
 
        const spec_all = "viz/overall.json"
        vegaEmbed('#vis_all', spec_all, {defaultStyle: true}).catch(console.warn);
+
+    </script>
+    <script>
+      //function update_network(){
+      //console.log("update")
+      //}
       
     </script>
 
+      <script>
+  $( function() {
+  $( "#network_year" ).selectmenu({
+  select: function(event, ui){
+  console.log('updated')
+  var network_year = ui.item.value
+  console.log(network_year)
+  network_file = "viz/" + network_year + ".html"
+  console.log(network_file)
+  document.getElementById("network_select").src = network_file
+  }
+  });
+  } );
+  </script>
    
   </head>
   <body>
@@ -134,6 +154,23 @@ CPJ includes in its definition of journalists the staff, freelancers, bloggers, 
 	  interesting structure in the network graph.
 	</p>
 	<iframe src="viz/overallNetwork.html" class="network_iframe"></iframe>
+
+	<p>
+	  <form onSubmit="update_network">
+	  <fieldset>
+	  <label for="network_year">Select year range</label>
+	  <select name="network_year" id="network_year">
+	    <option selected = "selected">1992-1999</option>
+	    <option selected = "selected">2000-2005</option>
+	    <option selected = "selected">2006-2010</option>
+	    <option selected = "selected">2011-2016</option>
+	  </select>
+	  </fieldset>
+	  </form>
+	  
+	  <iframe src="viz/1992-1999.html" class="network_iframe" id="network_select"></iframe>
+	</p>
+	
       </div>
 
       <h3 align="center">Discussions</h3>
