@@ -16,21 +16,48 @@
     <link rel="stylesheet" href="https://resources/demos/style.css">
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@3.0.0-rc3"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@3"></script>
     <script>
+      var year = 0;
+      var spec = "";
+      var text = "";
        $(function() {
             $( "#slider" ).slider({
-       value: 2000,
+       value: 1992,
        animate:"slow",
        orientation: "horizontal",
        range: true,
        min: 1992,
        max: 2016,
        slide: function( event, ui ) {
-                  $( "#slider_year" ).val( ui.value );
+       $( "#slider_year" ).val( ui.value );
+          val = ui.value
+          year = val;
+          console.log("year = ",year)
+          var spec = "viz/" + year.toString() + ".json"
+          console.log(spec)
+          vegaEmbed('#vis', spec, {defaultStyle: true}).catch(console.warn);
+          text = "<b>Deaths in year <em>" + year.toString() + "</em> across the world </b>";
+	  document.getElementById("year_info").innerHTML = text;
                }	
        });
        $( "#slider_year" ).val( $( "#slider" ).slider( "value" ) );
+       year = $("#slider").slider("value");
+       console.log("year = ",year)
+       var spec = "viz/" + year.toString() + ".json"
+       console.log(spec)
+       text = "<b>Deaths in year <em>" + year.toString() + "</em> across the world </b>";
+       document.getElementById("year_info").innerHTML = text;
+       vegaEmbed('#vis', spec, {defaultStyle: true}).catch(console.warn);
+       
        });
+       
+       //spec = "Income.json";
+       //var year = $( "#slider" ).slider( "value" );
+       //console.log(year)
+       
        
 
     </script>
@@ -39,7 +66,7 @@
   </head>
   <body>
     <div class="container-fluid" align="center">
-      <h1 >Journalist Deaths Since 1992</h1>
+      <h1>Journalist Deaths Since 1992</h1>
       <div class="info">
 	<p>
 	  Journalism is one of the most important occupation in a free world. 
@@ -76,16 +103,17 @@ CPJ includes in its definition of journalists the staff, freelancers, bloggers, 
 
 
       <h3 align="center">Data Maps</h3>
-      <div class="info">
+      <div class="year_slider">
 	<p>
 	</p>
-
-	<div id="slider" class="year_slider"></div>
-	<input type = "text" id = "slider_year" 
-            style = "border:0; color:#b9cd6d; font-weight:bold;">
+	
+	<p>
+	  Use the slider to select the year to visualize
+	</p>
+	<div id="slider" ></div>
+	<div id = "year_info" ></div>
+	<div id="vis" ></div>
       </div>
-      
-      
       
       <h3 align="center">Network Graph</h3>
       <div class="info">

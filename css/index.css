@@ -10,5 +10,8 @@ h1{
 }
 
 .year_slider{
-    width: 50%
+    width: 50%;
+    text-align: center;
+    margin-left: -10%;
+	  
 }
