@@ -58,10 +58,15 @@
        //var year = $( "#slider" ).slider( "value" );
        //console.log(year)
 
-       const spec_all = "viz/overall.json"
-       const spec_time_series = "viz/tsTop5.json"
-       vegaEmbed('#vis_all', spec_all, {defaultStyle: true}).catch(console.warn);
-       vegaEmbed('#vis_time_series', spec_time_series, {defaultStyle: true}).catch(console.warn);
+      //const spec_all = "viz/overall.json"
+      //vegaEmbed('#vis_all', spec_all, {defaultStyle: true}).catch(console.warn);
+      
+       const spec_time_series = "viz/Top5.json"
+      //vegaEmbed('#viz_time_series', spec_time_series, {defaultStyle: true}).catch(console.warn);
+
+      const spec_by_country = "viz/DeathsByCountry.json"
+      vegaEmbed('#viz_by_country', spec_by_country, {defaultStyle: true}).catch(console.warn);
+      
 
     </script>
     <script>
@@ -127,10 +132,18 @@ CPJ includes in its definition of journalists the staff, freelancers, bloggers, 
 	We can clearly see some periods where there have been more deaths, and these can be explained by #something#
       </p>
 
-      <div id="viz_time_series" ></div>
+      <div id="viz_time_series" class="info"></div>
+      <img src = 'viz/top5.png'></img>
       <p>
 	The plot shows the trend in number of deaths between 1992 and 2016 for the 5 countries with most deaths
       </p>
+
+
+      <div id="vis_by_country" ></div>
+      <p>
+	Desctiption
+      </p>
+      
       </div>
 
 
